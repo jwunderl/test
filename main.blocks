@@ -1,4 +1,18 @@
-<xml xmlns="http://www.w3.org/1999/xhtml">
-  <variables></variables>
-  <block type="pxt-on-start" x="0" y="0"></block>
-</xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="V^W/Z[y01+ugFuKnQ@#_">mySprite</variable><variable type="KIND_SpriteKind" id="hat]CCtlnl_OPjjKefhx">Player</variable><variable type="KIND_SpriteKind" id="o|ivJ+Nv3C`.l/IMh.d7">Projectile</variable><variable type="KIND_SpriteKind" id="c/R%pSPoE]`y+bY/]`]y">Food</variable><variable type="KIND_SpriteKind" id="WBer)hvKYHA!#c8hg4zh">Enemy</variable></variables><block type="pxt-on-start" id="7w!Rq/gN3%4}]Z^o6^9j" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="wl..Gs*A$R`Hw37{/Kip"><field name="VAR" id="V^W/Z[y01+ugFuKnQ@#_">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="qG)AEHZ#e([W7JQ0dS1Q"><value name="img"><shadow type="screen_image_picker" id="#[uaGKd(##(^h!rf%qNK"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . 3 3 3 3 3 . . . . . 
+. . . . . 3 3 . . . 3 3 . . . . 
+. . . . . 3 . . . . 3 3 3 . . . 
+. . . . 3 . . . . . . 3 . . . . 
+. . . . 3 . . . . . . . 3 . . . 
+. . . 3 . . . . . . . . 3 . . . 
+. . . 3 . . . . . . . . 3 . . . 
+. . . 3 . . . . . . . 3 . . . . 
+. . . 3 . . . . . . . 3 . . . . 
+. . . . 3 . . . . 3 3 . . . . . 
+. . . . . 3 3 3 3 . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind" id="_L+FJnM,I6_k#hws]Km5"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="E^6XbgFL+1nOD#sgd]k_"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get" id="v{_qA7D#(quK*WE4qD0J"><field name="VAR" id="V^W/Z[y01+ugFuKnQ@#_">mySprite</field></block></value></block></next></block></statement></block></xml>
