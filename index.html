@@ -38,8 +38,8 @@
             font-size: 14pt;
         }
 
-        body.embed {
-            background:transparent
+        .embed {
+            background: transparent;
         }
 
         iframe {
@@ -51,7 +51,7 @@
             border: none;
         }
 
-        body.embed iframe {
+        .nofooter iframe {
             height: 100%;
         }
 
@@ -155,15 +155,22 @@
         <span id="version"></span>
         <div id="fullscreen">⇲</div>
     </footer>
-    <script type="text/javascript">makeCodeRun({ js: "./assets/js/binary.js?v={{ site.github.build_revision }}" })</script>
     <script type="text/javascript">
-        if (window.location.search) {
-            if (/nofooter=1/i.test(window.location.search)) {
+        makeCodeRun({ js: "./assets/js/binary.js?v={{ site.github.build_revision }}" });
+
+        if (window.location && window.location.search) {
+            var noFooter = /nofooter=1/i.test(window.location.search);
+            var embed = /embed=1/i.test(window.location.search);
+            var root = document.querySelector("#root");
+
+            if (noFooter) {
                 const footer = document.querySelector("#footer")
+                root.className += " nofooter";
                 footer && footer.remove();
             }
-            if (/embed=1/i.test(window.location.search)) {
-                document.querySelector("#root").className = "embed";
+
+            if (embed) {
+                root.className += " embed";
             }
         }
     </script>
